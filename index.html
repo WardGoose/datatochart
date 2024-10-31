@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Chart</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>STOP ACTIONS 2024/10/30 16:50</h1>
+        <h1>Dropdown to Select Data for Chart</h1>
+        
+        <div class="select-container">
+            <select id="fileSelect">
+                <option value="x/data/moodengeth.txt">MoodengEth X</option>
+                <option value="x/data/moodengsol.txt">MoodengSOL X</option>
+                <option value="coin/data/moodengeth.txt">MoodengEth coin</option>
+                <option value="coin/data/moodengsol.txt">MoodengSOL coin</option>
+                <option value="coin/data/moodengethcap.txt">MoodengETH MarketCap ($)</option>
+                <option value="coin/data/moodengsolcap.txt">MoodengSOL MarketCap ($)</option>
+            </select>
+    
+            <select id="dataCountSelect">
+                <option value="10">최근 10개</option>
+                <option value="20">최근 20개</option>
+                <option value="30">최근 30개</option>
+                <option value="50">최근 50개</option>
+                <option value="100">최근 100개</option>
+                <option value="200">최근 200개</option>
+                <option value="500">최근 500개</option>
+                <option value="1000">최근 1000개</option>
+                <option value="2000">최근 2000개</option>
+            </select>
+        </div>
+
+        <!-- 차트를 표시할 캔버스 -->
+        <canvas id="myChart"></canvas>
+    </div>
+    
+        <footer style="text-align: center; margin-top: 20px;">
+        <p>pozuhtuhv</p>
+    </footer>
+    
+    <script src="static/js/script.js"></script>
+</body>
+</html>

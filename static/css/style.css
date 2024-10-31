@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;  /* 너비를 90%로 조정 */
+    margin: 50px auto;
+    max-height: 1500px;  /* 최대 높이 설정 */
+    overflow: auto;     /* 오버플로우 자동 조정 */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;  /* 폰트 크기 조정 */
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* 드롭다운을 나란히 배치하기 위해 flexbox 사용 */
+.select-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;  /* 드롭다운 사이의 간격 설정 */
+}
+
+select {
+    width: 100%;  /* 각 드롭다운 너비를 100%로 설정 */
+    padding: 10px;  /* 패딩 조정 */
+    font-size: 16px;  /* 폰트 크기 조정 */
+    flex: 1;  /* flex-grow 속성으로 각 드롭다운이 동일한 너비를 가짐 */
+}
+
+canvas {
+    height: 100%;  /* 차트 높이 설정 */
+}
+
+/* 모바일 대응을 위한 미디어 쿼리 */
+@media (max-width: 600px) {  /* 화면 너비가 600px 이하일 때 적용 */
+    .select-container {
+        flex-direction: column;  /* 모바일에서는 드롭다운을 세로로 배치 */
+    }
+
+    select {
+        font-size: 14px;  /* 모바일에서 드롭다운 폰트 크기 조정 */
+    }
+}
